@@ -1,0 +1,29 @@
+<div class="container">
+
+  
+    <div class="row">
+      <ng-container *ngIf="(customerList).length > 0; else elseTemplate">
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Email</th>
+                  <th>Tc</th>
+                </tr>
+               
+                <tr *ngFor="let item of customerList">
+                  <td>{{item.name}}</td>
+                  <td>{{item.surname}}</td>
+                  <td>{{item.email}}</td>
+                  <td>{{item.tcId}}</td>
+                </tr>
+              </table>
+      </ng-container>
+      <ng-template #elseTemplate>
+        <div class="row">
+          <p class="text-center">Nothing found</p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+  

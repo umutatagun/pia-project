@@ -1,0 +1,11 @@
+credit get ve post = http://localhost:8080/credit
+credit get(tcid'ye göre) = http://localhost:8080/credit/{tcid}
+customer get ve post = http://localhost:8080/customer
+customer get(tcid'ye göre) = http://localhost:8080/customer/{tcid}
+customer patch(update) = http://localhost:8080/customer/{tcid}
+customer password patch(şifre değiştirme)  =http://localhost:8080/customer/update-password/{tcid}
+customer delete = http://localhost:8080/customer/{tcid}
+customer login = http://localhost:8080/customer/login (Sadece password ve email bilgisi girilecek)
+customer credi onay bilgisi = http://localhost:8080/customer/credit/{tcid}
+
+
